@@ -1,4 +1,5 @@
-import * as db from "../../src/db";
+import * as chai from "chai"
+import * as db from "../../src/db"
 import visapiTest from "./visapi"
 
 
@@ -11,6 +12,6 @@ export default function (): void {
           .then(resolve)
       })
     })
-    visapiTest();
   })
+  visapiTest();
 }
